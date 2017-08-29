@@ -251,13 +251,13 @@ function pairwith {
       unset GIT_AUTHOR_NAME
       echo Pairing with self... ಠ_ಠ
     else
-      export GIT_AUTHOR_NAME="${1} & Garvin"
+      export GIT_AUTHOR_NAME="${1} & Kiefhaber"
       echo $1 > ~/.last_pairwith
       echo Committing as ${GIT_AUTHOR_NAME}
     fi
   else
     other=$(cat ~/.last_pairwith)
-    export GIT_AUTHOR_NAME="${other} & Garvin"
+    export GIT_AUTHOR_NAME="${other} & Kiefhaber"
     echo Committing as ${GIT_AUTHOR_NAME}
   fi
 }
